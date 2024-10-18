@@ -1,4 +1,23 @@
 {
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "includeFiles": ["**/*.html", "**/*.css", "**/*.js", "**/*.py"]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.html"
+    }
+  ]
+}
+
+
+{
   "version": 2,
   "public": true,
   "builds": [
