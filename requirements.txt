@@ -1,0 +1,8 @@
+requests==2.26.0  
+PyExecJS==1.5.1  
+# 注意：lxml 可能需要系统依赖，这在 Vercel 上可能无法直接安装  
+# 如果 lxml 是必需的，考虑使用 Docker 或查找预编译的 wheel 文件  
+# lxml==4.6.4  
+uvicorn==0.17.5  
+Scrapy==2.5.1  
+fastapi==0.75.0
